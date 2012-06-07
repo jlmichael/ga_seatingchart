@@ -1,0 +1,15 @@
+? &id001 !!ga_seatingchart.Worker {name: worker1}
+: ? &id002 !!ga_seatingchart.Worker {name: worker2}
+  : 3
+  ? &id003 !!ga_seatingchart.Worker {name: worker3}
+  : 1
+  ? &id004 !!ga_seatingchart.Worker {name: worker4}
+  : 5
+*id002:
+  *id001: 3
+  *id003: 5
+*id003:
+  *id001: 1
+  *id002: 2
+  *id004: 3
+*id004:
