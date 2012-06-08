@@ -2,11 +2,9 @@ package ga_seatingchart;
 
 import org.yaml.snakeyaml.Yaml;
 import yagalib.Environment;
+import yagalib.EvolutionManager;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Office implements Environment<SeatingChart> {
 
@@ -22,6 +20,18 @@ public class Office implements Environment<SeatingChart> {
                 .getResourceAsStream("workerrelationships.yaml"));
     }
 
+    public static Worker getRandomWorker() {
+        List<Worker> workers = new ArrayList<Worker>();
+        workers.addAll(workerRelationships.keySet());
+        return workers.get(EvolutionManager.random.nextInt(workers.size()));
+    }
+
+    public static Cubicle getRandomCubicle() {
+        List<Cubicle> cubicles = new ArrayList<Cubicle>();
+        cubicles.addAll(cubicleDistances.keySet());
+        return cubicles.get(EvolutionManager.random.nextInt(cubicles.size()));
+    }
+    
     public void populateWithOrganisms(Integer population) {
         for(int i = 0; i < population; i++) {
             seatingCharts.add(new SeatingChart());
