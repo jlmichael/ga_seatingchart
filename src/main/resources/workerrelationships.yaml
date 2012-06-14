@@ -13,3 +13,6 @@
   *id002: 2
   *id004: 3
 *id004:
+  *id001: 5
+  *id003: 3
+? &id005 !!ga_seatingchart.Worker {name: worker5}

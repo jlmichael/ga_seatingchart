@@ -1,19 +1,29 @@
-? &id002 !!ga_seatingchart.Cubicle {name: cube1}
-: ? &id001 !!ga_seatingchart.Cubicle {name: cube4}
-  : 5
+? &id002 !!ga_seatingchart.Cubicle {name: cube2}
+: ? &id001 !!ga_seatingchart.Cubicle {name: cube1}
+  : 0
   ? &id003 !!ga_seatingchart.Cubicle {name: cube3}
-  : 1
-  ? &id004 !!ga_seatingchart.Cubicle {name: cube2}
+  : 2
+  ? &id004 !!ga_seatingchart.Cubicle {name: cube4}
+  : 6
+  ? &id005 !!ga_seatingchart.Cubicle {name: cube5}
   : 1
 *id001:
-  *id002: 5
-  *id003: 6
-  *id004: 6
-*id003:
-  *id002: 1
-  *id001: 6
-  *id004: 2
-*id004:
-  *id002: 1
-  *id001: 6
+  *id002: 0
   *id003: 2
+  *id004: 6
+  *id005: 2
+*id003:
+  *id002: 2
+  *id001: 2
+  *id004: 6
+  *id005: 4
+*id004:
+  *id002: 6
+  *id001: 6
+  *id003: 6
+  *id005: 6
+*id005:
+  *id001: 2
+  *id002: 1
+  *id003: 4
+  *id004: 6
