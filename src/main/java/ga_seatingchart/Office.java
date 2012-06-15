@@ -81,11 +81,11 @@ public class Office implements Environment<SeatingChart> {
                         Cubicle firstCubicle = entry.getValue();
                         Cubicle secondCubicle = workersToCubicles.get(secondWorker);
 
-                        Integer distance = cubicleDistances.get(firstCubicle).get(secondCubicle);
+                        Integer distance = getDistanceBetweenCubes(firstCubicle, secondCubicle);
                         if(distance == null) {
                             logger.fatal("Got back null distance between " + firstCubicle.getName() + " and " + secondCubicle.getName());
                         }
-                        Integer importance = relationship.getValue() + workerRelationships.get(secondWorker).get(firstWorker) / 2;
+                        Integer importance = getImportanceOfRelationshipBetween(firstWorker, secondWorker);
                         totalWeight += distance * importance; 
                     }
                 }
@@ -93,5 +93,27 @@ public class Office implements Environment<SeatingChart> {
 
             chart.setSumOfWeights(totalWeight);
         }
+    }
+
+    private Integer getDistanceBetweenCubes(Cubicle firstCubicle, Cubicle secondCubicle) {
+        if(cubicleDistances.containsKey(firstCubicle) &&
+                cubicleDistances.get(firstCubicle) != null &&
+                cubicleDistances.get(firstCubicle).containsKey(secondCubicle)) {
+            return cubicleDistances.get(firstCubicle).get(secondCubicle);
+        }
+        if(cubicleDistances.containsKey(secondCubicle) &&
+                cubicleDistances.get(secondCubicle).containsKey(firstCubicle)) {
+            return cubicleDistances.get(secondCubicle).get(firstCubicle);
+        }
+        return null;                                                        
+    }
+
+    private Integer getImportanceOfRelationshipBetween(Worker firstWorker, Worker secondWorker) {
+        Integer result = workerRelationships.get(firstWorker).get(secondWorker);
+        if(result == null) {
+            result = workerRelationships.get(secondWorker).get(firstWorker);
+        }
+        return result;
+
     }
 }

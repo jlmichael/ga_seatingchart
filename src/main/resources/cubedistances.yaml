@@ -1,29 +1,230 @@
-? &id002 !!ga_seatingchart.Cubicle {name: cube2}
-: ? &id001 !!ga_seatingchart.Cubicle {name: cube1}
+? &id001 !!ga_seatingchart.Cubicle {name: A1}
+: ? &id002 !!ga_seatingchart.Cubicle {name: A2}
   : 0
-  ? &id003 !!ga_seatingchart.Cubicle {name: cube3}
+  ? &id003 !!ga_seatingchart.Cubicle {name: A3}
+  : 0
+  ? &id004 !!ga_seatingchart.Cubicle {name: A4}
+  : 0
+  ? &id005 !!ga_seatingchart.Cubicle {name: B1}
+  : 3
+  ? &id006 !!ga_seatingchart.Cubicle {name: B2}
+  : 4
+  ? &id007 !!ga_seatingchart.Cubicle {name: B3}
+  : 3
+  ? &id008 !!ga_seatingchart.Cubicle {name: B4}
+  : 4
+  ? &id009 !!ga_seatingchart.Cubicle {name: C1}
+  : 7
+  ? &id010 !!ga_seatingchart.Cubicle {name: C2}
+  : 8
+  ? &id011 !!ga_seatingchart.Cubicle {name: C3}
+  : 7
+  ? &id012 !!ga_seatingchart.Cubicle {name: C4}
+  : 8
+  ? &id013 !!ga_seatingchart.Cubicle {name: D1}
+  : 11
+  ? &id014 !!ga_seatingchart.Cubicle {name: D2}
+  : 11
+  ? &id015 !!ga_seatingchart.Cubicle {name: E1}
   : 2
-  ? &id004 !!ga_seatingchart.Cubicle {name: cube4}
-  : 6
-  ? &id005 !!ga_seatingchart.Cubicle {name: cube5}
-  : 1
-*id001:
-  *id002: 0
-  *id003: 2
-  *id004: 6
+  ? &id016 !!ga_seatingchart.Cubicle {name: E2}
+  : 2
+  ? &id017 !!ga_seatingchart.Cubicle {name: F1}
+  : 4
+  ? &id018 !!ga_seatingchart.Cubicle {name: G1}
+  : 8
+  ? &id019 !!ga_seatingchart.Cubicle {name: G2}
+  : 10
+  ? &id020 !!ga_seatingchart.Cubicle {name: H1}
+  : 11
+*id002:
+  *id003: 0
+  *id004: 0
   *id005: 2
+  *id006: 3
+  *id007: 2
+  *id008: 3
+  *id009: 6
+  *id010: 7
+  *id011: 6
+  *id012: 7
+  *id013: 10
+  *id014: 10
+  *id015: 2
+  *id016: 2
+  *id017: 4
+  *id018: 6
+  *id019: 9
+  *id020: 10
 *id003:
-  *id002: 2
-  *id001: 2
-  *id004: 6
-  *id005: 4
+  *id004: 0
+  *id005: 3
+  *id006: 4
+  *id007: 3
+  *id008: 5
+  *id009: 7
+  *id010: 8
+  *id011: 7
+  *id012: 8
+  *id013: 11
+  *id014: 11
+  *id015: 1
+  *id016: 1
+  *id017: 3
+  *id018: 6
+  *id019: 8
+  *id020: 10
 *id004:
-  *id002: 6
-  *id001: 6
-  *id003: 6
-  *id005: 6
+  *id005: 2
+  *id006: 3
+  *id007: 2
+  *id008: 3
+  *id009: 6
+  *id010: 7
+  *id011: 6
+  *id012: 7
+  *id013: 10
+  *id014: 10
+  *id015: 1
+  *id016: 1
+  *id017: 2
+  *id018: 5
+  *id019: 8
+  *id020: 9
 *id005:
-  *id001: 2
-  *id002: 1
-  *id003: 4
-  *id004: 6
+  *id006: 0
+  *id007: 0
+  *id008: 0
+  *id009: 3
+  *id010: 4
+  *id011: 3
+  *id012: 4
+  *id013: 7
+  *id014: 7
+  *id015: 4
+  *id016: 4
+  *id017: 2
+  *id018: 5
+  *id019: 5
+  *id020: 7
+*id006:
+  *id007: 0
+  *id008: 0
+  *id009: 2
+  *id010: 3
+  *id011: 2
+  *id012: 3
+  *id013: 6
+  *id014: 6
+  *id015: 7
+  *id016: 7
+  *id017: 2
+  *id018: 4
+  *id019: 5
+  *id020: 6
+*id007:
+  *id008: 0
+  *id009: 3
+  *id010: 4
+  *id011: 3
+  *id012: 4
+  *id013: 7
+  *id014: 7
+  *id015: 3
+  *id016: 2
+  *id017: 1
+  *id018: 3
+  *id019: 4
+  *id020: 6
+*id008:
+  *id009: 2
+  *id010: 3
+  *id011: 2
+  *id012: 3
+  *id013: 6
+  *id014: 6
+  *id015: 4
+  *id016: 3
+  *id017: 1
+  *id018: 2
+  *id019: 3
+  *id020: 5
+*id009:
+  *id010: 0
+  *id011: 0
+  *id012: 0
+  *id013: 3
+  *id014: 3
+  *id015: 9
+  *id016: 7
+  *id017: 5
+  *id018: 3
+  *id019: 3
+  *id020: 5
+*id010:
+  *id011: 0
+  *id012: 0
+  *id013: 2
+  *id014: 2
+  *id015: 10
+  *id016: 8
+  *id017: 5
+  *id018: 2
+  *id019: 2
+  *id020: 4
+*id011:
+  *id012: 0
+  *id013: 3
+  *id014: 3
+  *id015: 8
+  *id016: 5
+  *id017: 3
+  *id018: 1
+  *id019: 1
+  *id020: 3
+*id012:
+  *id013: 2
+  *id014: 2
+  *id015: 8
+  *id016: 8
+  *id017: 4
+  *id018: 1
+  *id019: 1
+  *id020: 2
+*id013:
+  *id014: 0
+  *id015: 11
+  *id016: 10
+  *id017: 7
+  *id018: 5
+  *id019: 4
+  *id020: 2
+*id014:
+  *id015: 10
+  *id016: 9
+  *id017: 6
+  *id018: 3
+  *id019: 2
+  *id020: 1
+*id015:
+  *id016: 0
+  *id017: 3
+  *id018: 7
+  *id019: 8
+  *id020: 11
+*id016:
+  *id017: 2
+  *id018: 6
+  *id019: 7
+  *id020: 9
+*id017:
+  *id018: 3
+  *id019: 4
+  *id020: 6
+*id018:
+  *id019: 0
+  *id020: 3
+*id019:
+  *id020: 2
+*id020:
+
